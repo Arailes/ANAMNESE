@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: #050635;
   margin: 0;
   padding: 20px;
 }
 
 .container {
-  background: white;
+  background: rgb(25, 61, 24);
   max-width: 800px;
   margin: auto;
   padding: 20px;
