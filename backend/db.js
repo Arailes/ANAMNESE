@@ -1,5 +1,5 @@
 const { Pool } = require('pg');
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || 'postgresql://usuario:senha@localhost:5432/anamnese_db'
+  connectionString: process.env.DATABASE_URL || 'postgresql://anamnese_db_user:xjPf4nZOZJYeUpTiFt1CGS2cq6csuZFI@dpg-d0rr2aq4d50c73avn8ug-a/anamnese_db'
 });
 module.exports = pool;
