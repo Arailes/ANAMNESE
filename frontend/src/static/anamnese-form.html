@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Anamnese - Manual</title>
+  <link rel="stylesheet" href="anamnese-form.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Ficha de Anamnese - Manual</h1>
+    <form id="manualForm">
+      <label>Nome completo: <input type="text" name="nome" required /></label>
+      <label>Data de nascimento: <input type="date" name="data_nascimento" required /></label>
+      <label>Queixa principal: <textarea name="queixa"></textarea></label>
+      <label>Hipótese Diagnóstica: <textarea name="hipotese"></textarea></label>
+      <label>Conclusão: <textarea name="conclusao"></textarea></label>
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+  <script src="anamnese-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+document.getElementById('manualForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(e.target).entries());
+  const res = await fetch('/api/anamnese', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ entradaVoz: `${data.queixa} ${data.hipotese} ${data.conclusao}` }),
+  });
+  const msg = await res.json();
+  alert(msg.message);
+});
